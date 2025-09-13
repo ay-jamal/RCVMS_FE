@@ -1,0 +1,43 @@
+<main>
+  <div class="statistics">
+    <div class="total-numbers">
+      <h4>عدد المتطوعين</h4>
+      <h3>200</h3>
+      <span> متطوع </span>
+    </div>
+    <div class="male-number">
+      <h4>المتطوعين الذكور</h4>
+      <h3>100</h3>
+      ذكر
+    </div>
+    <div class="femal-number">
+      <h4>المتطوعين الإناث</h4>
+      <h3>100</h3>
+      انثى
+    </div>
+    <div class="active-number">
+      <h4>المتطوعين النشطين</h4>
+      <h3>100</h3>
+      انثى
+    </div>
+  </div>
+  <div class="actions">
+    <button (click)="openAddVolunteer()" status="danger" nbButton>+</button>
+  </div>
+  <div class="table">
+    <ag-grid-angular
+      style="height: 100%"
+      class="ag-theme-alpine"
+      [rowData]="agConfig.rowData"
+      [rowHeight]="50"
+      [overlayNoRowsTemplate]="'لا يوجد بيانات لعرضها'"
+      [rowSelection]="'single'"
+      [defaultColDef]="agConfig.defaultColDef"
+      [icons]="agConfig.icons"
+      [localeText]="agConfig.translation"
+      [columnDefs]="columnDefs"
+      (gridReady)="agConfig.onGridReady($event)"
+    >
+    </ag-grid-angular>
+  </div>
+</main>

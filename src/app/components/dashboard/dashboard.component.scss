@@ -1,0 +1,38 @@
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    div {
+      padding: 1rem;
+      border-radius: 10px;
+      width: calc(100% / 4.2);
+      text-align: right;
+      color: #ffff;
+
+      h2,
+      span {
+        color: #fff;
+      }
+    }
+    .total-numbers {
+      background-color: #b9375d;
+    }
+    .male-number {
+      background-color: #d25d5d;
+    }
+    .femal-number {
+      background-color: #e7d3d3;
+    }
+    .active-number {
+      background-color: #f08b51;
+    }
+  }
+  .table {
+    height: 60%;
+  }
+}
