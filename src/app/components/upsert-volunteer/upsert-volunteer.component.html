@@ -1,0 +1,102 @@
+<main>
+  <div class="controlers">
+    <div class="flex-align gap">
+      <div class="controle">
+        <label for="firstName">الاسم الأول</label>
+        <input
+          class="size-large"
+          nbInput
+          name="firstName"
+          type="text"
+          placeholder="الاسم الأول"
+        />
+      </div>
+      <div class="controle">
+        <label for="lastName">الاسم الأخير </label>
+        <input
+          class="size-large"
+          nbInput
+          name="lastName"
+          type="text"
+          placeholder="الاسم الأخير"
+        />
+      </div>
+    </div>
+    <div class="flex-align gap">
+      <div class="controle">
+        <label for="phoneNumber">رقم الهاتف</label>
+        <input
+          class="size-large"
+          nbInput
+          name="phoneNumber"
+          type="text"
+          placeholder="رقم الهاتف"
+        />
+      </div>
+      <div class="controle">
+        <label for="birthDate">تاريخ الميلاد </label>
+        <input
+          class="size-large"
+          nbInput
+          name="birthDate"
+          type="date"
+          placeholder="تاريخ الميلاد"
+        />
+      </div>
+    </div>
+    <div class="flex-align gap">
+      <div class="controle">
+        <label for="gender">الجنس</label>
+        <nb-select placeholder="اختر الجنس">
+          <nb-option value="">اختر الجنس</nb-option>
+          <nb-option value="0">ذكر</nb-option>
+          <nb-option value="1">انثى</nb-option>
+        </nb-select>
+      </div>
+      <div class="controle">
+        <label for="joinDate">تاريخ الانضمام </label>
+        <input
+          class="size-large"
+          nbInput
+          name="joinDate"
+          type="date"
+          placeholder="تاريخ الانضمام"
+        />
+      </div>
+    </div>
+    <div class="flex-align gap">
+      <div class="controle">
+        <label for="bloodType">فصيلة الدم</label>
+        <nb-select placeholder="اختر فصيلة الدم">
+          <nb-option value="">اختر فصيلة الدم</nb-option>
+          <nb-option value="0">A+</nb-option>
+          <nb-option value="1">B+</nb-option>
+          <nb-option value="2">B-</nb-option>
+          <nb-option value="3">AB+</nb-option>
+          <nb-option value="4">AB-</nb-option>
+          <nb-option value="5">O+</nb-option>
+          <nb-option value="6">O-</nb-option>
+        </nb-select>
+      </div>
+      <div class="controle">
+        <label for="membershipType">نوع العضوية</label>
+        <nb-select placeholder="اختر نوع العضوية">
+          <nb-option value="">اختر نوع العضوية</nb-option>
+          <nb-option value="0">عضو</nb-option>
+          <nb-option value="1">عضو نشط</nb-option>
+        </nb-select>
+      </div>
+    </div>
+    <div class="controle">
+      <label for="phoneNumber">المدينة</label>
+      <input
+        class="size-large"
+        nbInput
+        name="city"
+        type="text"
+        placeholder="المدينة"
+      />
+    </div>
+    <button status="danger" nbButton>حفظ</button>
+  </div>
+</main>

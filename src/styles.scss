@@ -6,6 +6,31 @@
 @import "ag-grid-community/styles/ag-theme-quartz.css"; /* Quartz Theme */
 @import "ag-grid-community/styles/ag-theme-balham.css"; /* Balham Theme */
 
+
+@mixin utility($name, $propery: null, $value) {
+  .#{$name} {
+    @if $propery {
+      #{$propery}: $value;
+    }
+  }
+}
+
+@include utility("grid", "display", grid);
+@include utility("flex", "display", flex);
+@include utility("self-center-x", "justify-self", center);
+@include utility("self-end-x", "justify-self", end);
+@include utility("content-cx", "justify-content", center);
+@include utility("content-sb", "justify-content", space-between);
+@include utility("content-end-x", "justify-content", end);
+@include utility("content-start-x", "justify-content", start);
+@include utility("content-end-y", "align-items", end);
+@include utility("content-start-y", "align-items", start);
+@include utility("center-items", "justify-items", center);
+@include utility("content-cy", "align-items", center);
+@include utility("grow", "flex-grow", 1);
+@include utility("pos-relative", "position", relative);
+@include utility("pos-absolute", "position", absolute);
+
 * {
   padding: 0;
   margin: 0;
@@ -57,4 +82,13 @@ nb-layout-column {
 label {
   font-size: 12px;
   text-align: right;
+}
+
+.flex-align{
+  display: flex;
+  align-items: center;
+}
+
+.gap{
+ gap: 10px;   
 }

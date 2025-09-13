@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NbButtonModule, NbInputModule, NbStepperModule } from '@nebular/theme';
+import { NbButtonModule, NbInputModule, NbSelectModule, NbStepperModule } from '@nebular/theme';
 
 @Component({
   selector: 'app-upsert-volunteer',
@@ -7,7 +7,7 @@ import { NbButtonModule, NbInputModule, NbStepperModule } from '@nebular/theme';
     NbStepperModule,
     NbButtonModule,
     NbInputModule,
-    
+    NbSelectModule,
   ],
   templateUrl: './upsert-volunteer.component.html',
   styleUrl: './upsert-volunteer.component.scss'

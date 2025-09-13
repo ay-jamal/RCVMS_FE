@@ -1,0 +1,18 @@
+main {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.controlers,
+.controle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-align .controle {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
