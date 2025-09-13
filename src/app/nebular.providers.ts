@@ -6,5 +6,5 @@ export const provideNbTheme = () => importProvidersFrom(
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
-    NbDialogModule,
+    NbDialogModule.forRoot(),
 );
